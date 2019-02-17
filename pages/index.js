@@ -24,13 +24,12 @@ const Index = () => (
         boxShadow="0 3px 16px rgba(0, 0, 0, 0.25)"
       >
         <Flex alignItems="center" justifyContent="center">
-          <div className="glitch large" data-text="Memes">Memes As A Serivce</div>
+          <div className="glitch medium" data-text="Memes">
+            Memes As A Serivce
+          </div>
         </Flex>
         <Flex alignItems="center" justifyContent="center">
-          <div>AKA</div>
-        </Flex>
-        <Flex alignItems="center" justifyContent="center">
-          <div>MAAS</div>
+          <div className="small">A.K.A. MAAS</div>
         </Flex>
       </Card>
     </Flex>
