@@ -2,13 +2,30 @@ import React from 'react'
 import Head from 'next/head'
 import { Flex, Heading } from 'rebass'
 import 'antd/dist/antd.min.css'
-import { Card, Col, Row, Collapse, List } from 'antd'
+import { Card, Col, Row, Collapse, List, Statistic } from 'antd'
 const Panel = Collapse.Panel
 //import injectSheet from 'react-jss'
 import '../styles/sheet.css'
 function nada() {
   let nothing = 0
   nothing++
+}
+function getViews(uri) {
+  var data = null
+
+  var xhr = new XMLHttpRequest()
+  xhr.withCredentials = true
+
+  xhr.addEventListener('readystatechange', function() {
+    if (this.readyState === this.DONE) {
+      const json = parse(this.responseText)
+      return json
+    }
+  })
+
+  xhr.open('GET', uri)
+
+  xhr.send(data)
 }
 const rick = [
   'rickastley',
@@ -72,15 +89,18 @@ const Index = () => (
         <Col span={8}>
           <Card title="Rick Roll">
             The classic rick roll
-            <Collapse defaultActiveKey={['1']} onChange={nada}>
-              <Panel header="Available domains" key="1">
+            <Collapse onChange={nada()}>
+              <Panel header="Stats and info" key="1">
+                <Statistic title="Number of times called" value={9} />
+              </Panel>
+              <Panel header="Available domains" key="2">
                 <List
                   size="small"
                   dataSource={rick}
                   renderItem={item => <List.Item>{item}.now.sh</List.Item>}
                 />
               </Panel>
-              <Panel header="API" key="2">
+              <Panel header="API" key="3">
                 <p>hi</p>
               </Panel>
             </Collapse>
