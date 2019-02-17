@@ -1,0 +1,19 @@
+{
+  "name": "MemesAsAService",
+  "alias": [
+    "MemesAsAService",
+    "maas",
+    "MemeAsAService",
+    "rickbustinmemes",
+    "memez",
+    "verydankmeme",
+    "memezasaservice",
+    "superduperdankmemes",
+    "verydankmemes"
+  ],
+  "version": 2,
+  "builds": [{ "src": "next.config.js", "use": "@now/next" }],
+  "github": {
+    "silent": true
+  }
+}
