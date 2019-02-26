@@ -3,19 +3,37 @@
   "alias": [
     "MemesAsAService",
     "maas",
+    "mass",
+    "mmmeeemmmeee",
+    "thememeapi",
     "MemeAsAService",
     "rickbustinmemes",
     "memez",
+    "thememe",
+    "theverybestmemes",
+    "theverybestmeme",
     "verydankmeme",
     "verydankmemes",
     "memezasaservice",
     "superduperdankmemes",
+    "theupmostdank",
+    "upmostdank",
+    "dankestmeme",
+    "dankestmemes",
     "verydankmemes",
     "dankmemes",
-    "dankmeme"
+    "dankmeme",
+    "memesoftheupmostdank",
+    "superduperdank",
+    "theupmostdank",
+    "memedank"
   ],
   "version": 2,
-  "builds": [{ "src": "next.config.js", "use": "@now/next" }],
+  "builds": [
+    { "src": "next.config.js", "use": "@now/next" },
+    { "src": "api/hello/index.js", "use": "@now/node" },
+    { "src": "api/ping/index.js", "use": "@now/node" }
+  ],
   "github": {
     "silent": true
   }

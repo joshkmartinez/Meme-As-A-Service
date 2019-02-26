@@ -90,9 +90,6 @@ const Index = () => (
           <Card title="Rick Roll">
             The classic rick roll
             <Collapse onChange={nada()}>
-              <Panel header="Stats and info" key="1">
-                <Statistic title="Number of times called" value={9} />
-              </Panel>
               <Panel header="Available domains" key="2">
                 <List
                   size="small"
@@ -107,7 +104,7 @@ const Index = () => (
           </Card>
         </Col>
         <Col span={8}>
-          <Card title="Bustin">Bustin makes me feel good</Card>
+          <Card title="Bustin">Bustin makes me feel good...</Card>
         </Col>
         <Col span={8}>
           <Card title="Ricardo">Our lord and savior Ricardo</Card>
@@ -122,6 +119,9 @@ const Index = () => (
     </Card>
     <Flex alignItems="center" justifyContent="center">
       <div>Please call our 24/7 help line: 778-330-2389</div>
+    </Flex>
+    <Flex alignItems="center" justifyContent="center">
+      <div>Our representatives are always ready to help you.</div>
     </Flex>
   </React.Fragment>
 )
